@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="static/styles.css" rel="stylesheet">
+        <script src="my.js"></script>
+        <title>Google Search</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+            <li><a href="index.html">Search</a></li>
+            <li><a href="image.html">Images</a></li>
+            <li><a  href="advance.html">Advance Search</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div>
+                <img src="static/google.png" alt="google">
+            </div>
+            <form action="https://google.com/search">
+                <div id = "f_box">
+                    <button class="fa fa-search btn" aria-hidden="true"></button>
+                    <input id="q_val" class="f_item" type="text" name="q">
+                </div>
+                <div id="b_box">
+                    <input class="btn" type="submit" onclick="return checkField()" value="Google Search">
+                    <input class="btn" type="submit" name="btnI" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </main>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="static/styles.css" rel="stylesheet">
+    <script src="my.js"></script>
+    <title>Google Images</title>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Search</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div>
+            <img class="image" src="static/google.png" alt="google">
+            <label class="t">images</label>
+    </div>
+    <form action="https://google.com/search" onsubmit="return checkField()">
+        <div id = "f_box">
+            <button class="fa fa-search btn" aria-hidden="true"></button>
+            <input id="q_val" class="f_item" type="text" name="q">
+            <input type="hidden" name="tbm" value="isch">
+            <button class="btn" style="opacity: 100%;" disabled ><i title="search by image" class="fa fa-camera fa-lg"></i></button>
+            <button class="fa fa-search fa-lg btn" style="color:blue;" type="submit"></button>
+        </div>
+    </form>
+</main>
+
+
+
+</body>
+
+</html>
